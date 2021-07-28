@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+   $(document).ready(function (){
+      $(".imgGaleria").click(function (){
+         $(this).hide(1000);
+      });
+      $("#change").click (function(){
+         $(".imgGaleria").show(1000);
+      });
+   });
+
+</script>
+
+<style>
+   .imgGaleria {
+      width: 400px;
+      height: 300px;
+   }
+</style>
+
+</head>
+<body>
+
+
+<button id="change">CLIQUE AQUI PARA AS IMAGENS REAPARECEREM</button>
+
+<br>
+<img class="imgGaleria" src="CasaFoto1.jpg">
+<img class="imgGaleria" src="CasaFoto2.jpg">
+<img class="imgGaleria" src="CasaFoto3.jpg">
+<br>
+<img class="imgGaleria" src="CasaFoto4.jpg">
+<img class="imgGaleria" src="CasaFoto5.jpg">
+<img class="imgGaleria" src="CasaFoto6.jpg">
+
+</body>
+</html>
